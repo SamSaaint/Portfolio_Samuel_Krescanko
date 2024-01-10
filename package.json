@@ -1,0 +1,22 @@
+{
+  "name": "samuelkrescanko",
+  "version": "1.0.0",
+  "description": "my portfolio page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "less": "less-watch-compiler"
+  },
+  "author": "Samuel Krescanko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "less": "^4.2.0",
+    "less-watch-compiler": "^1.16.3"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.0",
+    "nodemon": "^3.0.2"
+  }
+}
