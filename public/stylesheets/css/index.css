@@ -385,9 +385,14 @@ body h5 {
     font-size: 1.7rem;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
   .section-container h3 {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section-container h3 {
+    font-size: 1.2rem;
   }
 }
 .section-container h4 {
@@ -424,6 +429,11 @@ body h5 {
 .section-container p {
   color: #3f3f3f;
 }
+.stack-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #stack-all-icons {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -455,7 +465,7 @@ body h5 {
 }
 @media only screen and (max-width: 420px) {
   .stack-icon {
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 1rem;
   }
 }
 #x-scroll-container {
@@ -520,7 +530,19 @@ body h5 {
 }
 @media only screen and (max-width: 420px) {
   .portfolio-content .portfolio-texts .portfolio-header {
-    margin: 70px 0 10px;
+    margin: 10px 0 10px;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .portfolio-content .portfolio-texts .portfolio-header {
+    margin: 40px 0 10px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .portfolio-content .portfolio-texts .portfolio-header {
+    margin: 60px 0 10px;
+    font-size: 1rem;
   }
 }
 .portfolio-content .portfolio-texts .portfolio-stack-header {
@@ -532,10 +554,27 @@ body h5 {
     text-align: center;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 420px) {
   .portfolio-content .portfolio-texts .portfolio-stack-header {
-    margin: 20px 0 10px;
+    margin: 15px 0 10px;
   }
+}
+.portfolio-content .portfolio-texts .portfolio-link {
+  font-size: 1.2rem;
+  color: #070795;
+}
+@media only screen and (max-width: 420px) {
+  .portfolio-content .portfolio-texts .portfolio-link {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .portfolio-content .portfolio-texts .portfolio-link {
+    font-size: 0.8rem;
+  }
+}
+.portfolio-content .portfolio-texts .portfolio-link::before {
+  content: "> ";
 }
 .portfolio-content .portfolio-pics {
   flex-basis: 65%;
